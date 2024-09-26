@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background: #fff;
+    width: 100vw;
+    height: 6.5rem;
+    position: fixed;
+    z-index: 11;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.15); 
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    align-items: center;
+}
+
+img{
+    height: 100px;
+    margin-left: 19px;
+    border-radius: 50%;
+} 
+

@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.service{
+    text-align: center;
+}
+
+.service h1{
+    font-size: 2.5rem;
+}
+
+.service p{
+    font-size: 1.2rem;
+}
+
+.why-ielts ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.ielts{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    align-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.cards_ielts{
+    background-color: rgb(37, 44, 44);
+    border-radius: 2rem;
+    padding: 2rem;
+    transition: var(--transition);
+}
+
+.cards_ielts:hover{
+    box-shadow: 0 2rem 2rem rgba(216, 202, 202, 0.7);
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.cards_ielts h5{
+    margin: 2rem 0 1rem;
+}
+
+.cards_ielts p{
+    font-size: .85rem;
+}
+
+.services_section {
+    margin: 20px 0;
+}
+
+.service_section {
+    background: #0e1010;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service_section h3 {
+    color: #16a085;
+    margin-bottom: 10px;
+}
+
+.how-to-register ol {
+    padding-left: 20px;
+}
+
+.how-to-register ol li {
+    margin-bottom: 10px;
+}
+
+.reg_link_container a:hover{
+    text-decoration: underline;
+    color: #370425;
+}
+
+.reg_link_container img{
+    width: 20rem;
+    border-radius: 20px;
+}
+
+
+
+/* MEDIA (Tab) */
+
+/* Base styles (for larger screens) */
+
+/* Media Queries for Responsiveness */
+
+/* Extra small devices (phones, less than 600px) */
+@media only screen and (max-width: 600px) {
+    .service h1 {
+        font-size: 1.8rem;
+    }
+
+    .service p {
+        font-size: 1rem;
+    }
+
+    .ielts {
+        grid-template-columns: 1fr;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .cards_ielts {
+        padding: 1.5rem;
+    }
+
+    .cards_ielts h5 {
+        margin: 1.5rem 0 1rem;
+    }
+
+    .cards_ielts p {
+        font-size: 0.8rem;
+    }
+
+    .reg_link_container img {
+        width: 15rem;
+    }
+}
+
+/* Small devices (landscape phones, 600px to 768px) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .service h1 {
+        font-size: 2.2rem;
+    }
+
+    .service p {
+        font-size: 1.1rem;
+    }
+
+    .ielts {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .cards_ielts {
+        padding: 1.8rem;
+        gap: .2rem;
+    }
+
+    .cards_ielts:nth-child(3){
+        margin-right: 30px;
+    }
+
+    .reg_link_container img {
+        width: 18rem;
+    }
+}
+
+/* Medium devices (tablets, 768px to 992px) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .service h1 {
+        font-size: 2.4rem;
+    }
+
+    .service p {
+        font-size: 1.2rem;
+    }
+
+    .ielts {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .cards_ielts {
+        padding: 2rem;
+    }
+
+    .reg_link_container img {
+        width: 19rem;
+    }
+}
+
+/* Large devices (desktops, 992px and above) */
+@media only screen and (min-width: 992px) {
+    .service h1 {
+        font-size: 2.5rem;
+    }
+
+    .service p {
+        font-size: 1.2rem;
+    }
+
+    .ielts {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .cards_ielts {
+        padding: 2rem;
+    }
+
+    .reg_link_container img {
+        width: 20rem;
+    }
+}
+

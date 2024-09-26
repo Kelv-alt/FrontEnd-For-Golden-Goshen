@@ -1,0 +1,95 @@
+/* Base CSS remains as is */
+
+/* Media Queries */
+
+/* Mobile devices (0px to 767px) */
+@media screen and (max-width: 767px) {
+    .header_container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .left_header, .right_header {
+        margin-right: 0;
+        padding: 1rem;
+    }
+
+
+    .right_header, .left_header p {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .meet_container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .team_member-image img {
+        height: auto;
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* Tablet devices (768px to 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .header_container {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+
+    .left_header, .right_header {
+        margin-right: 0;
+        height: 180px;
+    }
+
+    .meet_container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .team_member-image img {
+        height: 200px;
+        width: auto;
+        margin-left: 0;
+    }
+}
+
+/* Small laptops and desktops (1025px to 1440px) */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    .header_container {
+        grid-template-columns: 1fr 1fr;
+        gap: 6rem;
+    }
+
+    .left_header, .right_header {
+        height: 200px;
+    }
+
+    .meet_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Larger desktops (1441px and above) */
+@media screen and (min-width: 1441px) {
+    .header_container {
+        grid-template-columns: 1fr 1fr;
+        gap: 8rem;
+    }
+
+    .left_header, .right_header {
+        height: 250px;
+    }
+
+    .meet_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .team_member-image img {
+        height: 250px;
+        width: 300px;
+        margin-left: 20px;
+    }
+}
